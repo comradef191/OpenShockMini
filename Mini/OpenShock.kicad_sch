@@ -3848,23 +3848,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 7.62 0)
+			(property "Reference" "U4"
+				(at 1.905 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "DL-TX1-433M"
-				(at 0 12.7 0)
+				(at 5.715 -8.89 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" "kicad_lceda:WIELM-TH_DL-TX1-433M"
+			(property "Footprint" "CustomFootprints:WIELM-TH_DL-TX1-433M"
 				(at 0 2.54 0)
 				(effects
 					(font
@@ -3909,6 +3911,15 @@
 					(hide yes)
 				)
 			)
+			(property "LCSC" "C381160"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(symbol "DL-TX1-433M_1_1"
 				(rectangle
 					(start -5.08 5.08)
@@ -3918,7 +3929,7 @@
 						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(circle
@@ -5759,11 +5770,11 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 194 194 1)
+			(color 194 0 0 1)
 		)
 		(fill
 			(type color)
-			(color 0 194 194 1)
+			(color 194 0 0 1)
 		)
 		(uuid 7758ff2d-c35b-4e61-a1ab-898880fa9f34)
 	)
