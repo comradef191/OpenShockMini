@@ -7,6 +7,15 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Open Shock Mini")
+		(date "2024-06-21")
+		(rev "r1")
+		(company "Pera @ https://transfur.science/f191")
+		(comment 1 "CERN OHL v2 - S")
+		(comment 2 "https://github.com/comradef191/OpenShockMini")
+		(comment 4 "Based on nullstalgia's OpenShock Core V1.2")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
