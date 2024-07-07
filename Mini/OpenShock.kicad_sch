@@ -6,12 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "Open Shock Mini")
-		(date "2024-06-21")
-		(rev "r1.1")
+		(date "2024-07-07")
+		(rev "r1.3")
 		(company "Pera @ https://transfur.science/f191")
 		(comment 1 "CERN OHL v2 - S")
 		(comment 2 "https://github.com/comradef191/OpenShockMini")
-		(comment 4 "Based on nullstalgia's OpenShock Core V1.2")
+		(comment 4 "Based on nullstalgia's OpenShock Core")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0"
@@ -697,6 +697,145 @@
 						)
 					)
 					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4510,7 +4649,7 @@
 		(uuid "077e3f1d-76a7-43ee-9195-c0be6fd9d0f0")
 	)
 	(junction
-		(at 274.32 130.81)
+		(at 271.145 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0807e6a7-f5dc-4708-aa97-72188815393e")
@@ -4660,7 +4799,7 @@
 		(uuid "f07fca13-16fa-40e7-8f4e-0f8625d491fb")
 	)
 	(no_connect
-		(at 281.94 139.7)
+		(at 278.765 137.16)
 		(uuid "08709e72-417c-443b-83c2-c57f012e01d2")
 	)
 	(no_connect
@@ -5271,6 +5410,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.335 153.67) (xy 266.065 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86d749a-0936-4c58-b292-eeff428d79dd")
+	)
+	(wire
+		(pts
 			(xy 38.1 170.815) (xy 38.1 172.72)
 		)
 		(stroke
@@ -5491,7 +5640,7 @@
 	)
 	(wire
 		(pts
-			(xy 272.415 130.81) (xy 274.32 130.81)
+			(xy 269.24 128.27) (xy 271.145 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5521,7 +5670,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 130.81) (xy 274.32 132.08)
+			(xy 271.145 128.27) (xy 271.145 129.54)
 		)
 		(stroke
 			(width 0)
@@ -5566,7 +5715,7 @@
 		(uuid 4d8635df-8a20-48b9-ae0b-082416eb7751)
 	)
 	(rectangle
-		(start 249.555 127.635)
+		(start 249.555 125.095)
 		(end 283.21 164.465)
 		(stroke
 			(width 1)
@@ -5578,7 +5727,7 @@
 		(uuid 5267738a-3a92-4a8f-9adf-cfb30c39e08d)
 	)
 	(rectangle
-		(start 249.555 149.225)
+		(start 249.555 146.685)
 		(end 283.21 164.465)
 		(stroke
 			(width 0.5)
@@ -5793,7 +5942,7 @@
 	)
 	(text "STATUS\nLEDS"
 		(exclude_from_sim no)
-		(at 254.635 135.89 0)
+		(at 254.635 132.715 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -5882,7 +6031,7 @@
 	)
 	(global_label "RGB"
 		(shape input)
-		(at 266.7 139.7 180)
+		(at 263.525 137.16 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5892,7 +6041,7 @@
 		)
 		(uuid "1baf94e2-d67a-4b97-8ef0-7378a3e9979d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 259.9842 139.7 0)
+			(at 256.8092 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6410,7 +6559,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 267.335 130.81 270)
+		(at 264.16 128.27 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6418,7 +6567,7 @@
 		(dnp no)
 		(uuid "00183228-4c4e-4542-880e-bd26e2aeed9b")
 		(property "Reference" "#PWR019"
-			(at 260.985 130.81 0)
+			(at 257.81 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6427,7 +6576,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 130.81 90)
+			(at 257.175 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6436,7 +6585,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 267.335 130.81 0)
+			(at 264.16 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6445,7 +6594,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 267.335 130.81 0)
+			(at 264.16 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6454,7 +6603,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 267.335 130.81 0)
+			(at 264.16 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6476,7 +6625,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 269.875 130.81 90)
+		(at 266.7 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6484,7 +6633,7 @@
 		(dnp no)
 		(uuid "028c7d17-5c8a-42dd-b338-0dbbf752c62f")
 		(property "Reference" "C7"
-			(at 267.97 129.54 90)
+			(at 264.795 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6492,7 +6641,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 269.875 133.35 90)
+			(at 266.7 130.81 90)
 			(effects
 				(font
 					(size 1 1)
@@ -6500,7 +6649,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 269.875 130.81 0)
+			(at 266.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6658,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 269.875 130.81 0)
+			(at 266.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +6667,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.875 130.81 0)
+			(at 266.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6676,7 @@
 			)
 		)
 		(property "LCSC" "C6119861"
-			(at 269.875 130.81 0)
+			(at 266.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7446,84 +7595,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 268.605 153.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23a3b18e-a026-4982-b936-0ab748431eb0")
-		(property "Reference" "R7"
-			(at 268.605 155.575 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 268.605 153.67 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "CustomFootprints:THT-Resistor_Customised"
-			(at 268.605 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 268.605 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 268.605 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 268.605 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "860cae9d-50b0-41b2-be4a-4c7ebb456c25")
-		)
-		(pin "2"
-			(uuid "b715d970-cd58-45d3-8c8d-bc61d176da12")
-		)
-		(instances
-			(project "OpenShock"
-				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B")
-		(at 274.32 139.7 0)
+		(at 271.145 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7531,7 +7604,7 @@
 		(dnp no)
 		(uuid "2548e0ac-795e-4106-82ad-1019e657ca86")
 		(property "Reference" "D1"
-			(at 276.86 133.35 0)
+			(at 273.685 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,7 +7612,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 264.16 144.145 0)
+			(at 260.985 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7547,7 +7620,7 @@
 			)
 		)
 		(property "Footprint" "footprints:LED_WS2812B-Mini_3.5x3.5mm_P1.75mm"
-			(at 275.59 147.32 0)
+			(at 272.415 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7557,7 +7630,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 276.86 149.225 0)
+			(at 273.685 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7567,7 +7640,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 274.32 139.7 0)
+			(at 271.145 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7576,7 +7649,7 @@
 			)
 		)
 		(property "LCSC" "C527089"
-			(at 274.32 139.7 0)
+			(at 271.145 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7956,10 +8029,76 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 274.955 153.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3175c167-c9ba-4f1b-b0f2-7b4a18c5b8d4")
+		(property "Reference" "#PWR029"
+			(at 271.145 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 277.495 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.955 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.955 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.955 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34c320ef-d8de-4330-9b50-9dbd3f506f59")
+		)
+		(instances
+			(project "OpenShock"
+				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 275.59 20.955 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
@@ -8002,15 +8141,6 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, small"
-			(at 275.59 20.955 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 275.59 20.955 0)
 			(effects
 				(font
@@ -8188,7 +8318,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 147.32 90)
+		(at 271.145 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8196,7 +8326,7 @@
 		(dnp no)
 		(uuid "44e283b7-1b33-4231-b30d-e652c8c15a66")
 		(property "Reference" "#PWR017"
-			(at 280.67 147.32 0)
+			(at 277.495 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8205,7 +8335,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 278.765 147.32 90)
+			(at 275.59 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8213,7 +8343,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 147.32 0)
+			(at 271.145 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8222,7 +8352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 147.32 0)
+			(at 271.145 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,7 +8361,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 274.32 147.32 0)
+			(at 271.145 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8253,7 +8383,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 274.32 130.81 270)
+		(at 271.145 128.27 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8261,7 +8391,7 @@
 		(dnp no)
 		(uuid "45293d9b-80fc-4e15-aecb-0a53850351c6")
 		(property "Reference" "#PWR018"
-			(at 270.51 130.81 0)
+			(at 267.335 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8270,7 +8400,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 276.86 130.81 90)
+			(at 273.685 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8279,7 +8409,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 130.81 0)
+			(at 271.145 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8288,7 +8418,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 130.81 0)
+			(at 271.145 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8297,7 +8427,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 274.32 130.81 0)
+			(at 271.145 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8389,6 +8519,82 @@
 			(project "OpenShock"
 				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 272.415 153.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46567d8a-b3b5-444c-90d1-28ebf0ecaf6f")
+		(property "Reference" "R7"
+			(at 272.415 155.575 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 272.415 153.67 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "CustomFootprints:THT-Resistor_Customised"
+			(at 272.415 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 272.415 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 272.415 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 272.415 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02dde243-209a-4ed4-a5f4-99feaddbe1ba")
+		)
+		(pin "2"
+			(uuid "c32002d3-f64c-403e-ab97-ec36c067c240")
+		)
+		(instances
+			(project "OpenShock"
+				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9257,6 +9463,76 @@
 			(project "OpenShock"
 				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 267.335 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "714cad1b-4dbc-483b-91ee-b5f65c9a115b")
+		(property "Reference" "J5"
+			(at 271.78 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 273.05 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 267.335 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.335 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 267.335 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "063ab44e-87be-4a25-9ba7-1f89b8b99880")
+		)
+		(pin "1"
+			(uuid "d863e17f-8e0a-4931-9e74-724f688529ac")
+		)
+		(instances
+			(project "OpenShock"
+				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -10693,72 +10969,6 @@
 			(project "OpenShock"
 				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 271.145 153.67 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ba6980aa-d5e4-4bfa-9ff0-4efc50cea5fe")
-		(property "Reference" "#PWR029"
-			(at 267.335 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 273.685 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 271.145 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 271.145 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 271.145 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a77e06a1-e566-44f5-a91a-b8bcc7361bc9")
-		)
-		(instances
-			(project "OpenShock"
-				(path "/8d84395c-1679-4fe0-86f1-92d917a6720d"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
