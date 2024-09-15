@@ -29,4 +29,4 @@ fp-info-cache
 */*-backups/*
 * - Copy*/
 **/gerber/
-Mini/12vPCB/12vPCB-backups/*
+Mini/gerbers/*
