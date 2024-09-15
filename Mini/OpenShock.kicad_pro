@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.9,
-          "width": 1.5
+          "drill": 1.2,
+          "height": 1.2,
+          "width": 1.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -67,7 +67,7 @@
         "clearance|77012000|91823000|e75ec004-b362-4409-9dce-a93964d4ff9d|1f1db13e-0218-4880-9338-ba7549a016cc",
         "clearance|77037000|85973000|78a6d50e-aa7a-4267-97a6-59a9190bda08|035e5964-dd27-4472-930b-8c835fe9b9ae",
         "clearance|77037000|86148000|035e5964-dd27-4472-930b-8c835fe9b9ae|8e431ef4-b329-439d-bdbc-feaef9a51b1d",
-        "clearance|81904000|67533500|72215ec0-be6b-4b5b-a8bf-639b785ee723|a7666357-6a99-4590-9c3a-5dd44d57e169"
+        "clearance|81294400|67533500|72215ec0-be6b-4b5b-a8bf-639b785ee723|a7666357-6a99-4590-9c3a-5dd44d57e169"
       ],
       "meta": {
         "version": 2
@@ -228,6 +228,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false
@@ -715,7 +723,7 @@
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -733,7 +741,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -751,18 +759,6 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SuppliersPartNumber",
-          "name": "SuppliersPartNumber",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "uuid",
-          "name": "uuid",
           "show": false
         },
         {
